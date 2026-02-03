@@ -108,18 +108,21 @@ for m,n in list_of_data:
 		if l1_count> (min_number_stocks*(l1_weight/100)):
 			l1_final_weight = (l1_budget/l1_count)
 
+		else:
+
 		#divides budget by minimum number of stocks to be allocated per band
-		l1_final_weight = (l1_budget/(min_number_stocks/l1_weight))
-		print(f"Allocation for {m} : {l1_final_weight}")
+			l1_final_weight = (l1_budget/(min_number_stocks*(l1_weight/100)))
+			print(f"Allocation for {m} : {l1_final_weight}")
 
 	elif n == 'l2':
 
 		if l2_count> (min_number_stocks*(l2_weight/100)):
 				l2_final_weight = (l2_budget/l2_count)
 
+		else:
 
-		l2_final_weight = (l2_budget/(min_number_stocks/l2_weight))
-		print(f"Allocation for {m} : {l2_final_weight}")
+			l2_final_weight = (l2_budget/(min_number_stocks*(l2_weight/100)))
+			print(f"Allocation for {m} : {l2_final_weight}")
 
 
 
@@ -129,24 +132,32 @@ for m,n in list_of_data:
 
 			l3_final_weight = (l3_budget/l3_count)
 
-		l3_final_weight = (l3_budget/(min_number_stocks/l3_weight))
-		print(f"Allocation for {m} : {l3_final_weight}")
+		else:
+
+
+			l3_final_weight = (l3_budget/(min_number_stocks*(l3_weight/100)))
+			print(f"Allocation for {m} : {l3_final_weight}")
 
 	elif n == 'l4':
 
 		if l4_count> (min_number_stocks*(l4_weight/100)):
 			l4_final_weight = (l4_budget/l4_count)
 
-		l4_final_weight = (l4_budget/(min_number_stocks/l4_weight))
-		print(f"Allocation for {m} : {l4_final_weight}")
+		else:
+
+
+			l4_final_weight = (l4_budget/(min_number_stocks*(l4_weight/100)))
+			print(f"Allocation for {m} : {l4_final_weight}")
 
 	elif n == 'l5':
 
 		if l5_count> (min_number_stocks*(l5_weight/100)):
 			l5_final_weight = (l5_budget/l5_count)
 
-		l5_final_weight = (l5_budget/(min_number_stocks/l5_weight))
-		print(f"Allocation for {m} : {l5_final_weight}")
+		else:
+
+			l5_final_weight = (l5_budget/(min_number_stocks*(l5_weight/100)))
+			print(f"Allocation for {m} : {l5_final_weight}")
 
 	else:
 		#nano
@@ -154,8 +165,10 @@ for m,n in list_of_data:
 		if l6_count> (min_number_stocks*(l6_weight/100)):
 			l6_final_weight = (l6_budget/l6_count)
 		
-		l6_final_weight = (l6_budget/(min_number_stocks/l6_weight))
-		print(f"Allocation for {m} : {l6_final_weight}")
+		else:
+
+			l6_final_weight = (l6_budget/(min_number_stocks*(l6_weight/100)))
+			print(f"Allocation for {m} : {l6_final_weight}")
 
 
 			
